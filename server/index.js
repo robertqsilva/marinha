@@ -12,14 +12,14 @@ app.use(router)
 
 const pingApi = async () => {
   try {
-    const response = await axios.get("https://marinha.onrender.com/ping"); 
+    const response = await axios.get("https://marinhaapi.onrender.com/ping"); 
     console.log("API está ativa:", response.status);
   } catch (error) {
     console.error("Erro ao verificar a API:", error.message);
   }
 };
 
-setInterval(pingApi, 15000);
+setInterval(pingApi, 50000);
 
 
 app.listen(PORT, () => console.log('server is running'))
