@@ -12,7 +12,7 @@ app.use(router)
 
 const pingApi = async () => {
   try {
-    const response = await axios.get("https://marinha.onrender.com"); // 
+    const response = await axios.get("https://marinha.onrender.com/ping"); 
     console.log("API está ativa:", response.status);
   } catch (error) {
     console.error("Erro ao verificar a API:", error.message);
