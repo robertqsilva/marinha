@@ -1,0 +1,11 @@
+CREATE TABLE pedidos(
+  numero INT UNIQUE NOT NULL,
+  nome TEXT NOT NULL,
+  tiposanguineo VARCHAR(10) NOT NULL,
+  mangaM INT NOT NULL,
+  mangaG INT NOT NULL,
+  mangaGG INT NOT NULL,
+  regataM INT NOT NULL,
+  regataG INT NOT NULL,
+  regataGG INT NOT NULL
+);
